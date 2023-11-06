@@ -9,17 +9,27 @@ class App extends Component {
         <Text style={{ color: 'red', fontSize:30}}>
           Sujeito Programador
         </Text>
-
-        <Image
-          source={{ uri:'https://sujeitoprogramador.com/steve.png' }}
-          style={{width:250, height:250}}
-        />
+          <Jobs largura={400} altura={400}/> {/* props definindo altura e largura da imagem da classe Jobs */}
         <Text style={{width:'100', textAlign:'center', fontSize:50, color: 'red'}}>
           {name}
         </Text>
       </View>
 
     )
+    }
+  }
+
+export default App;
+
+
+class Jobs extends Component{
+    render(){
+      return(
+          <Image
+            source={{ uri:'https://sujeitoprogramador.com/steve.png' }}
+            style={{width:this.props.largura, height:this.props.altura}}
+          />
+      );
     }
   }
 
@@ -31,5 +41,3 @@ class App extends Component {
       justifyContent: 'center'
     },
   });
-
-  export default App;
