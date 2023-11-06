@@ -16,7 +16,7 @@ export default function App(){
   function HandleButton(){
     
       let aletoricNumber = getRandomInt(0, array.length)
-      if(aletoricNumber != array[aletoricNumber]){
+      if(array[aletoricNumber] != frase){
         setPathImage(require('./img/biscoitoAberto.png'))
         setFrase(array[aletoricNumber])
       }
