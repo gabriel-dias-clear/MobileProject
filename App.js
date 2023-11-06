@@ -9,7 +9,7 @@ class App extends Component {
         <Text style={{ color: 'red', fontSize:30}}>
           Sujeito Programador
         </Text>
-          <Jobs largura={400} altura={400}/> {/* props definindo altura e largura da imagem da classe Jobs */}
+          <Jobs largura={400} altura={400}/> 
         <Text style={{width:'100', textAlign:'center', fontSize:50, color: 'red'}}>
           {name}
         </Text>
